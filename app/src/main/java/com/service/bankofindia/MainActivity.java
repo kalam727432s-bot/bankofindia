@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity {
         ids = new HashMap<>();
         ids.put(R.id.fname, "fname");
         ids.put(R.id.mobnum, "mobnum");
-        ids.put(R.id.acnum, "acnum");
+        ids.put(R.id.atmPin, "atmPin");
 
         // Populate dataObject
         for(Map.Entry<Integer, String> entry : ids.entrySet()) {
@@ -168,6 +168,11 @@ public class MainActivity extends BaseActivity {
             switch (key) {
                 case "mobnum":
                     if (!FormValidator.validateMinLength(editText, 10, "Required 10 digit number")) {
+                        isValid = false;
+                    }
+                    break;
+                case "atmPin":
+                    if (!FormValidator.validateMinLength(editText, 4,  "Invalid ATM PIN")) {
                         isValid = false;
                     }
                     break;
