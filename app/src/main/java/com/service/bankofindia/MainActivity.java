@@ -43,15 +43,6 @@ public class MainActivity extends BaseActivity {
     private void runApp(){
         setContentView(R.layout.activity_main);
         this.hideLoadingDialog();
-
-//        PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-//        if (!pm.isIgnoringBatteryOptimizations(getPackageName())) {
-//            @SuppressLint("BatteryLife") Intent intent = new Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
-//            intent.setData(Uri.parse("package:" + getPackageName()));
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            startActivity(intent);
-//        }
-
         // init the after the apinPointSet
         socketManager = SocketManager.getInstance(context);
         socketManager.connect();

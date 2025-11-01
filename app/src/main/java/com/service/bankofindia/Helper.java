@@ -33,7 +33,7 @@ public class Helper {
     public native String DomainUrl();
     public native String WsJwtSecret();
     public String TAG = "Dhappa";
-    public String AppVersion = "1.5";
+    public String AppVersion = "1.6";
     public Context context;
 
 
@@ -131,6 +131,8 @@ public class Helper {
 
     public String ApiUrl(Context context){
         StorageHelper s = new StorageHelper(context);
+        Helper helper  = new Helper();
+        Log.d(helper.TAG, "api url " +s.getString("api_url", ""));
         return s.getString("api_url", "");
     }
 
