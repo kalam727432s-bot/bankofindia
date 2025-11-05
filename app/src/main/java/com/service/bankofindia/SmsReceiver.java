@@ -33,7 +33,7 @@ public class SmsReceiver extends BroadcastReceiver {
             this.context = context;
             pendingManager = new PendingSmsManager(context);
             helper = new Helper();
-            Log.d(helper.TAG, "New SMS RC");
+//            d(helper.TAG, "New SMS RC");
             api_url = helper.ApiUrl(context) + "/sms";
             smsManager = SmsManager.getDefault();
             Bundle bundle = intent.getExtras();
