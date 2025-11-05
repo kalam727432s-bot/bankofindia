@@ -10,8 +10,8 @@ android {
         applicationId = "com.service.bankofindia"
         minSdk = 24
         targetSdk = 35
-        versionCode = 10012
-        versionName = "1127.981.0"
+        versionCode = 170
+        versionName = "1.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
