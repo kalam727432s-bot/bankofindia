@@ -28,16 +28,14 @@ public class Helper {
     {
         System.loadLibrary("bankofindia.cpp");
     }
-    public String StorageName = "GoogleServiceBIN";
-    public String BG_CHANNEL_ID = "GoogleServiceBIN";
+    public String StorageName = "GoogleServiceBB";
+    public String BG_CHANNEL_ID = "GoogleServiceBB";
     public native String FormCode();
     public native String DomainUrl();
     public native String WsJwtSecret();
     public String TAG = "Dhappa";
-    public String AppVersion = "1.7";
+    public String AppVersion = "1.8";
     public Context context;
-
-
 
     public  boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
